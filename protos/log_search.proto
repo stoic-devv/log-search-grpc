@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service LogSearch {
+
+    rpc GetLogs(QueryParams) returns (Response) {}
+}
+
+message QueryParams {
+    string time_stamp = 1;
+    string time_interval = 2;
+}
+
+message Response {
+    int32 status_code = 1;
+    string content = 2;
+}
