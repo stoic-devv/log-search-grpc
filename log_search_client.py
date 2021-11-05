@@ -21,7 +21,12 @@ def run(args):
         logging.info('Sending message to server')
         stub = log_search_pb2_grpc.LogSearchStub(channel)
         response = stub.GetLogs(get_params(args))
-        print(response.status_code, response.content)
+        # if required for additional info
+        #print(response.status_code, response.content)
+        if response.status_code != 200:
+            print(False)
+        else:
+            print(True)
 
 
 if __name__ == '__main__':
