@@ -1,15 +1,22 @@
 syntax = "proto3";
 
+// Interface exported by the server
 service LogSearch {
 
+    // Gets the log messages from lambda service
+    // for a given within an interval of a given timestamp
     rpc GetLogs(QueryParams) returns (Response) {}
 }
 
+// Query parameters for a get request
+// time stamp and time interval
 message QueryParams {
     string time_stamp = 1;
     string time_interval = 2;
 }
 
+// HTTP response from the Get call
+// status code and content
 message Response {
     int32 status_code = 1;
     string content = 2;

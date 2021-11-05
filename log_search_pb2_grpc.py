@@ -6,7 +6,8 @@ import log_search_pb2 as log__search__pb2
 
 
 class LogSearchStub(object):
-    """Missing associated documentation comment in .proto file."""
+    """Interface exported by the server
+    """
 
     def __init__(self, channel):
         """Constructor.
@@ -22,10 +23,13 @@ class LogSearchStub(object):
 
 
 class LogSearchServicer(object):
-    """Missing associated documentation comment in .proto file."""
+    """Interface exported by the server
+    """
 
     def GetLogs(self, request, context):
-        """Missing associated documentation comment in .proto file."""
+        """Gets the log messages from lambda service
+        for a given within an interval of a given timestamp
+        """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
@@ -46,7 +50,8 @@ def add_LogSearchServicer_to_server(servicer, server):
 
  # This class is part of an EXPERIMENTAL API.
 class LogSearch(object):
-    """Missing associated documentation comment in .proto file."""
+    """Interface exported by the server
+    """
 
     @staticmethod
     def GetLogs(request,
