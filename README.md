@@ -28,7 +28,7 @@ Note that these stubs are already included in this repository.
 `python log_search_client.py  arg1 arg2`
 
 where `arg1` and `arg2` are of the form `HH:MM:SS.sss`<br/>
-for eg: `python log_search_client.py  21:49:35.892 00:00:10.000`
+for eg: `python log_search_client.py  19:39:37.360 00:00:05.000`
 
 ## Project structure
 1. `protos/log_Search.proto`: contains IDL for our client server model
