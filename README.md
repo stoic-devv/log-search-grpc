@@ -42,3 +42,6 @@ for eg: `python log_search_client.py  19:39:37.360 00:00:05.000`
 1. Client invokes server function by passing a gRPC message
 2. Server is makes a REST call to the AWS API Gateway which serves the lambda function that is already deployed.
 3. Server sends the gRPC response to the client.
+
+## Youtube video
+For more details on using this repo check out this [youtube video](https://youtu.be/yyXu3mo2VJo)
