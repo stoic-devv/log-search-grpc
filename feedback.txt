@@ -22,7 +22,8 @@ Grading Criteria:
 	* Program doesn't crash: -0%
  - the documentation exists but it is insufficient to understand your program design and models and how you assembled and deployed all components of your solution: up to 5% lost;
 	* documentation exists: -0%
-	
-Total Grade: 6.75%
+ - protobuf used: +2%
+
+Total Grade: 8.75%
 Comments: Good job implemnting your functionality. The repositionies are well organization. 
 I could only find 2 unit tests though. 
